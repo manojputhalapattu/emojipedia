@@ -20,21 +20,7 @@ function Details({ emoji, name, meaning }) {
 const Fef = () => {
   return (
     <div>
-      <Details
-        emoji={emojipedia[0].emoji}
-        name={emojipedia[0].name}
-        meaning={emojipedia[0].meaning}
-      />
-      <Details
-        emoji={emojipedia[1].emoji}
-        name={emojipedia[1].name}
-        meaning={emojipedia[1].meaning}
-      />
-      <Details
-        emoji={emojipedia[2].emoji}
-        name={emojipedia[2].name}
-        meaning={emojipedia[2].meaning}
-      />
+      {emojipedia.map(Details)}
     </div>
   );
 };
